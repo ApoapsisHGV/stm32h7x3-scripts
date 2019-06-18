@@ -10,8 +10,7 @@ else
     cd openocd
     echo "Preparing compilation..."
     ./bootstrap
-    ./configure --disable-werror
-    echo "Done"
+    ./configure --enable-stlink --disable-werror    echo "Done"
     echo "Compiling..."
     make
     echo "Done"
